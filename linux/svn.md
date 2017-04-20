@@ -1,5 +1,5 @@
 ## svn 常用操作命令
-1. 检出
+### 检出
 
 ```
 svn  checkout  http://路径(目录或文件的全路径)　[本地目录全路径] --username　用户名
@@ -17,7 +17,7 @@ svn checkouthttp://localhost/test/testapp --username wzhnsc
 　　 不指定本地目录全路径，则检出到当前目录下。
 ```
 
-2. 导出(导出一个干净的不带.svn文件夹的目录树)
+### 导出(导出一个干净的不带.svn文件夹的目录树)
 ```
 svn  export  [-r 版本号]  http://路径(目录或文件的全路径) [本地目录全路径]　--username　用户名
 svn  export  [-r 版本号]  svn://路径(目录或文件的全路径) [本地目录全路径]　--username　用户名
@@ -37,7 +37,7 @@ svn export /home/testapp /home/testtools
 但是不在版本控制下(即没提交的新文件，因为.svn文件夹里没有与之相关的信息记录)的文件不会拷贝。
 ```
 
-3. 添加新文件
+### 添加新文件
 ```
 svn　add　文件名
 注：告诉SVN服务器要添加文件了，还要用svn commint -m真实的上传上去！
@@ -48,7 +48,7 @@ svn add *.php ＜－ 添加当前目录下所有的php文件
 svn commit -m “添加我的测试用全部php文件“ *.php
 ```
 
-4. 提交
+### 提交
 ```
 svn　commit　-m　“提交备注信息文本“　[-N]　[--no-unlock]　文件名
 svn　ci　-m　“提交备注信息文本“　[-N]　[--no-unlock]　文件名
@@ -62,7 +62,7 @@ svn ci -m “提交我的测试用test.php“ test.php
 svn ci -m “提交我的测试用test.php“ -N --no-unlock test.php ＜－ 保持锁就用–no-unlock开关
 ```
 
-5. 更新文件
+### 更新文件
 ```
 svn　update
 svn　update　-r　修正版本　文件名
@@ -75,7 +75,7 @@ svn update test.php ＜－ 更新与版本库同步。
 　　　　　　　　　　　 然后清除svn resolved，最后再提交commit。
 ```
 
-6. 删除文件
+### 删除文件
 ```
 svn　delete　svn://路径(目录或文件的全路径) -m “删除备注信息文本”
 推荐如下操作：
@@ -88,7 +88,7 @@ svn delete test.php
 svn ci -m “删除测试文件test.php”
 ```
 
-7. 加锁/解锁
+### 加锁/解锁
 ```
 svn　lock　-m　“加锁备注信息文本“　[--force]　文件名 
 svn　unlock　文件名
@@ -97,7 +97,7 @@ svn lock -m “锁信测试用test.php文件“ test.php
 svn unlock test.php
 ```
 
-8. 比较差异
+### 比较差异
 ```
 svn　diff　文件名 
 svn　diff　-r　修正版本号m:修正版本号n　文件名
@@ -106,7 +106,7 @@ svn diff test.php＜－ 将修改的文件与基础版本比较
 svn diff -r 200:201 test.php＜－ 对 修正版本号200 和 修正版本号201 比较差异
 ```
 
-9. 查看文件或者目录状态
+### 查看文件或者目录状态
 ```
 svn st 目录路径/名
 svn status 目录路径/名＜－ 目录下的文件和子目录的状态，正常状态不显示 
@@ -122,27 +122,27 @@ svn status -v 目录路径/名＜－ 显示文件和子目录状态
 　　原因是svn在本地的.svn中保留了本地版本的原始拷贝。
 ```
 
-10. 查看日志
+### 查看日志
 ```
 svn　log　文件名
 例子：
 svn log test.php＜－ 显示这个文件的所有修改记录，及其版本号的变化 
 ```
 
-11. 查看文件详细信息
+### 查看文件详细信息
 ```
 svn　info　文件名
 例子：
 svn info test.php
 ```
 
-12. SVN 帮助
+### SVN 帮助
 ```
 svn　help ＜－ 全部功能选项
 svn　help　ci ＜－ 具体功能的说明
 ```
 
-13. 查看版本库下的文件和目录列表
+### 查看版本库下的文件和目录列表
 ```
 svn　list　svn://路径(目录或文件的全路径)
 svn　ls　svn://路径(目录或文件的全路径)
@@ -151,7 +151,7 @@ svn list svn://localhost/test
 svn ls svn://localhost/test ＜－ 显示svn://localhost/test目录下的所有属于版本库的文件和目录 
 ```
 
-14. 创建纳入版本控制下的新目录
+### 创建纳入版本控制下的新目录
 ```
 svn　mkdir　目录名
 svn　mkdir　-m　"新增目录备注文本"　http://目录全路径
@@ -179,7 +179,7 @@ svn update
 　　path '/newdir/newsubdir '
 ```
 
-15. 恢复本地修改
+### 恢复本地修改
 ```
 svn　revert　[--recursive]　文件名
 注意: 本子命令不会存取网络，并且会解除冲突的状况。但是它不会恢复被删除的目录。
@@ -188,14 +188,14 @@ svn revert foo.c ＜－ 丢弃对一个文件的修改
 svn revert --recursive . ＜－恢复一整个目录的文件，. 为当前目录 
 ```
 
-16. 把工作拷贝更新到别的URL
+### 把工作拷贝更新到别的URL
 ```
 svn　switch　http://目录全路径　本地目录全路径
 例子：
 svn switch http://localhost/test/456 . ＜－ (原为123的分支)当前所在目录分支到localhost/test/456
 ```
 
-17. 解决冲突
+### 解决冲突
 ```
 svn　resolved　[本地目录全路径]
 例子：
@@ -212,7 +212,7 @@ foo.c.r31
 你可以仅仅删除冲突的文件并且提交，但是svn resolved除了删除冲突文件，还修正了一些记录在工作拷贝管理区域的记录数据，所以我们推荐你使用这个命令。
 ```
 
-18. 不checkout而查看输出特定文件或URL的内容
+### 不checkout而查看输出特定文件或URL的内容
 ```
 svn　cat　http://文件全路径
 例子：
