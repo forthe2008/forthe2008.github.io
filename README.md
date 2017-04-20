@@ -5,3 +5,4 @@ You can use the [editor on GitHub](https://github.com/forthe2008/forthe2008.gith
 
 
 阿达
+![picture](./1_6.jpg)
