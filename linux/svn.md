@@ -1,10 +1,11 @@
 ## svn 常用操作命令
 1. 检出
+
 ```
 svn  checkout  http://路径(目录或文件的全路径)　[本地目录全路径] --username　用户名
 svn  checkout  svn://路径(目录或文件的全路径)　[本地目录全路径]  --username　用户名
 
-# 例子：
+例子：
 svn co svn://localhost/测试工具 /home/testtools --username wzhnsc
 svn co http://localhost/test/testapp --username wzhnsc
 svn checkout svn://localhost/测试工具 /home/testtools --username wzhnsc
