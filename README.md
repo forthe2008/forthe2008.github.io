@@ -4,6 +4,7 @@ use link [editor on GitHub](https://github.com/forthe2008/forthe2008.github.io/e
 
 ## Linux笔记
 #### 1.[SVN Learn](./linux/svn.md)
+#### 2.[Git Learn](./linux/git.md)
 ## 学习笔记
 ## 工作笔记
 ## 记录笔记
