@@ -1,0 +1,16 @@
+{
+"configs" : [
+  {
+"server" : "45.62.114.124",
+"server_port" : 15001,
+"password" : "feixiang",
+"method" : "aes-256-cfb",
+"remarks" : "群专享节点。如无法访问入群更新： http://51.ruyo.net/ad1/"}
+
+],
+"index" : 0,
+"global" : false,
+"enabled" : true,
+"shareOverLan" : false,
+"isDefault" : false,
+"localPort" : 1080}
