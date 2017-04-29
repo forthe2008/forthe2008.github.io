@@ -25,5 +25,9 @@ Check all the options via -h. You can also use a Configuration file instead.
 ```
 #### 3.安装shadowsocks clien in PC
 [download link](./shadowsocks)
+
 配置：
 ![配置](./shadowsocks/1.png)
+端口：-p 443
+密码：-k password
+IP ：网络服务器商提供
