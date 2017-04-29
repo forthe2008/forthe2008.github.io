@@ -1,4 +1,5 @@
 ## 如何使用shadowsocks上Google
+more detail see [link](https://github.com/forthe2008/shadowsocks)
 #### 1.准备外国服务器，自行baidu
 例如：http://banwagong.cn/ 
 #### 2.安装shadowsocks server in 海外服务器
