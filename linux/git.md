@@ -244,6 +244,13 @@ Date:   Thu Aug 22 11:22:08 2013 +0800
 
     add merge
 
+创建标签
+$ git tag v0.1 3628164
+
+tag提交到远程服务器
+$ git push origin v0.1.2 # 将v0.1.2标签提交到git服务器
+$ git push origin –tags # 将本地所有标签一次性提交到git服务器
+
 还可以创建带有说明的标签，用-a指定标签名，-m指定说明文字：
 
 $ git tag -a v0.1 -m "version 0.1 released" 3628164
