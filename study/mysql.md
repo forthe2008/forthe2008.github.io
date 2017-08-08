@@ -266,5 +266,9 @@ ALL: 可选，返回所有结果集，包含重复数据
 ```
 
 
+参考：
+http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html
+http://www.runoob.com/mysql/mysql-tutorial.html
+
 
 
