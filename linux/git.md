@@ -310,4 +310,21 @@ git tag -d <tagname>
 git push origin --delete tag <tagname>
 ```
 
+### 子模块
+```
+添加：
+1.git submodule init
+2.git submodule add ssh://gitlab@gitlab.widget-inc.com:65422/consumers/go-sdk.git vendor/upsdk
+
+删除：
+1.git submodule deinit vendor/upsdk
+2.git rm --cached vendor/upsdk 
+3.git commit -am "Remove a submodule."
+
+修改：
+1.修改.gitmodules中url
+2.git submodule sync 
+3.git commit -am "Update submodule url." 
+```
+
 
