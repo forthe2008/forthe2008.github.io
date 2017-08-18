@@ -151,6 +151,7 @@ README.md
 ### 分支管理
 ```
 查看分支：git branch
+查看远程分支：git branch -a
 创建分支：git branch <name>
 切换分支：git checkout <name>
 创建+切换分支：git checkout -b <name>
@@ -299,3 +300,14 @@ Date:   Thu Aug 22 10:37:30 2013 +0800
     branch test
 
 ```
+
+### 删除标签
+```
+删除本地tag
+git tag -d <tagname>
+
+删除远程tag
+git push origin --delete tag <tagname>
+```
+
+
