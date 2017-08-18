@@ -25,7 +25,7 @@ sudo less /var/log/shadowsocks.log
 Check all the options via -h. You can also use a Configuration file instead.
 ```
 #### 3.安装shadowsocks clien in PC
-[download link](./shadowsocks)
+[download link](http://pan.baidu.com/s/1bBWgge)
 
 配置：
 ![配置](./shadowsocks/1.png)
@@ -33,4 +33,4 @@ Check all the options via -h. You can also use a Configuration file instead.
 密码：-k password
 IP ：网络服务器商提供
 #### 4.安装shadowsocks clien in 安卓
-[APP](./shadowsocks/com.github.shadowsocks_185.apk)
+[APP](http://pan.baidu.com/s/1hrJlxYG)
